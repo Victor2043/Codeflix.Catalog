@@ -16,7 +16,7 @@ namespace Codeflix.Catalog.Domain.Validation
             if (target.Length < minLength)
                 throw new EntityValidationException($"{fieldName} should be at least {minLength} characters long");
         }
-        public static void MaxLength(string target, int maxLength, string fieldName)fu
+        public static void MaxLength(string target, int maxLength, string fieldName)
         {
             if (target.Length > maxLength)
                 throw new EntityValidationException($"{fieldName} should be less or equal {maxLength} characters long");
