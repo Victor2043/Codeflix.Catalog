@@ -11,9 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{98B46AEF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Domain", "Codeflix.Catalog.Domain\Codeflix.Catalog.Domain.csproj", "{D2E1A0E6-6E22-4E90-8C81-716D97B356F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeflix.Catalog.Application", "Codeflix.Catalog.Application\Codeflix.Catalog.Application.csproj", "{7A876F42-CF27-4D8D-9198-BC5FF74B2812}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Application", "Codeflix.Catalog.Application\Codeflix.Catalog.Application.csproj", "{7A876F42-CF27-4D8D-9198-BC5FF74B2812}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeflix.Catalog.Infra.Data.EF", "Codeflix.Catalog.Infra.Data.EF\Codeflix.Catalog.Infra.Data.EF.csproj", "{133560C6-2E33-4DD5-80AE-D6122F417A3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Infra.Data.EF", "Codeflix.Catalog.Infra.Data.EF\Codeflix.Catalog.Infra.Data.EF.csproj", "{133560C6-2E33-4DD5-80AE-D6122F417A3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeflix.Catalog.Api", "Codeflix.Catalog.Api\Codeflix.Catalog.Api.csproj", "{6AD5C522-19C4-4DCA-B6BF-2B807EE81F69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{133560C6-2E33-4DD5-80AE-D6122F417A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{133560C6-2E33-4DD5-80AE-D6122F417A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{133560C6-2E33-4DD5-80AE-D6122F417A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD5C522-19C4-4DCA-B6BF-2B807EE81F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD5C522-19C4-4DCA-B6BF-2B807EE81F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD5C522-19C4-4DCA-B6BF-2B807EE81F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD5C522-19C4-4DCA-B6BF-2B807EE81F69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{D2E1A0E6-6E22-4E90-8C81-716D97B356F6} = {B982F26B-31CF-40E4-A16E-0FCA2E570E66}
 		{7A876F42-CF27-4D8D-9198-BC5FF74B2812} = {B982F26B-31CF-40E4-A16E-0FCA2E570E66}
 		{133560C6-2E33-4DD5-80AE-D6122F417A3F} = {B982F26B-31CF-40E4-A16E-0FCA2E570E66}
+		{6AD5C522-19C4-4DCA-B6BF-2B807EE81F69} = {B982F26B-31CF-40E4-A16E-0FCA2E570E66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98492C68-B117-4103-BCEC-C5684EE1F6F6}
