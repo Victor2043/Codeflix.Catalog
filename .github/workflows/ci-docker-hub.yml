@@ -11,11 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: tests secrets
-      run: echo "${{ secrets.DOCKER_USERNAME }}" && echo "${{ secrets.GCP_PROJECT_ID}}"
 
     - name: Log in to Docker Hub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login --username "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+      run: echo Teste1234 | docker login --username dash7 --password-stdin
 
     - uses: actions/checkout@v3
     - name: Login Dockerhub
