@@ -13,7 +13,7 @@ jobs:
     steps:
 
     - name: Log in to Docker Hub
-      run: echo Teste1234 | docker login --username dash7 --password-stdin
+      run: echo ${{secrets.DOCKER_PASSWORD}} | docker login --username ${{secrets.DOCKER_USERNAME}} --password-stdin
 
     - uses: actions/checkout@v3
     - name: Login Dockerhub
@@ -22,10 +22,6 @@ jobs:
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       run: echo Teste1234 | docker login --username dash7 --password-stdin
 
-    
-    - name: test login
-      run: echo ${{secrets.DOCKER_PASSWORD}} | docker login --username ${{secrets.DOCKER_USERNAME}} --password-stdin
-      
     - name: Build the Docker image
       run: docker build -t dash7/codeflix .
     - name: Push to Dockerhub
