@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: tests secrets
+      run: echo "${{ secrets.DOCKER_USERNAME }}" && echo "${{ secrets.GCP_PROJECT_ID}}"
+
     - name: Log in to Docker Hub
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login --username "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
