@@ -21,12 +21,14 @@ jobs:
         DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       run: echo Teste1234 | docker login --username dash7 --password-stdin
+
+    
+    - name: test login
+      run: echo ${{secrets.DOCKER_PASSWORD}} | docker login --username ${{secrets.DOCKER_USERNAME}} --password-stdin
       
     - name: Build the Docker image
       run: docker build -t dash7/codeflix .
     - name: Push to Dockerhub
       run: docker push dash7/codeflix:latest
 
-    - name: test login
-      run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 
