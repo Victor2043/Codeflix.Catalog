@@ -20,7 +20,7 @@ jobs:
       run: echo Teste1234 | docker login --username dash7 --password-stdin
 
     - name: Build the Docker image
-      run: docker build --rm -t dash7/codeflix -f Codeflix.Catalog\Codeflix.Catalog.Api\Dockerfile .
+      run: docker build --rm -t dash7/codeflix -f Codeflix.Catalog/Codeflix.Catalog.Api/Dockerfile .
     - name: Push to Dockerhub
       run: docker push dash7/codeflix:latest
 
