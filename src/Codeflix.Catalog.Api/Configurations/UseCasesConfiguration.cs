@@ -15,7 +15,8 @@ public static class UseCasesConfiguration
     )
     {
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
-      //  services.AddMediatR(typeof(CreateCategory));
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(CreateCategory).GetTypeInfo().Assembly));
+        //services.AddMediatR(typeof(CreateCategory));
         services.AddRepositories();
         return services;
     }

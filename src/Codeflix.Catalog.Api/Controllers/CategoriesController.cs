@@ -1,4 +1,5 @@
-﻿using Codeflix.Catalog.Api.ApiModels.Response;
+﻿using Codeflix.Catalog.Api.ApiModels.Category;
+using Codeflix.Catalog.Api.ApiModels.Response;
 using Codeflix.Catalog.Application.UseCases.Category.Common;
 using Codeflix.Catalog.Application.UseCases.Category.CreateCategory;
 using Codeflix.Catalog.Application.UseCases.Category.DeleteCategory;
@@ -9,7 +10,6 @@ using Codeflix.Catalog.Domain.SeedWork.SearchableRepository;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Data;
 
 namespace FC.Codeflix.Catalog.Api.Controllers;
 
