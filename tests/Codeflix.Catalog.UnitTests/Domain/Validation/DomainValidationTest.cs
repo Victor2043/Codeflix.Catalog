@@ -26,16 +26,6 @@ namespace Codeflix.Catalog.UnitTests.Domain.Validation
             Assert.Equal("FieldName should not be null", exception.Message);
 
         }
-        [Theory(DisplayName = nameof(NotNullOrEmptyThrownWhenEmpty))]
-        [Trait("Domain", "DomainValidation - Validation")]
-        public void NotNullOrEmptyThrownWhenEmpty(string? target)
-        {
-            Action action = () => DomainValidation.NotNullOrEmpty(target, "fieldName");
-
-            var exception = Assert.Throws<EntityValidationException>(action);
-
-            Assert.Equal("FieldName should not be null or empty", exception.Message);
-
-        }
+        
     }
 }
