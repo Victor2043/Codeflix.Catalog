@@ -2,8 +2,8 @@ version: '3.4'
 
 services:
   codeflix.catalog.db:
-    container_name: codeflix-db
-    hostname: codeflix-db
+    container_name: catalogdb
+    hostname: catalogdb
     image: mysql
     ports:
         - 3306:3306
@@ -13,3 +13,5 @@ services:
 networks:
   default:
     name: service_catalog
+
+  

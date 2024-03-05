@@ -3,19 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.UnitTests", "Codeflix.Catalog.UnitTests\Codeflix.Catalog.UnitTests.csproj", "{05FCAE3D-6421-44EA-A87D-25B8EC9328E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.UnitTests", "tests\Codeflix.Catalog.UnitTests\Codeflix.Catalog.UnitTests.csproj", "{05FCAE3D-6421-44EA-A87D-25B8EC9328E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B982F26B-31CF-40E4-A16E-0FCA2E570E66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{98B46AEF-DCBE-4DDB-ABF9-0C56277D8580}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Domain", "Codeflix.Catalog.Domain\Codeflix.Catalog.Domain.csproj", "{D2E1A0E6-6E22-4E90-8C81-716D97B356F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Domain", "src\Codeflix.Catalog.Domain\Codeflix.Catalog.Domain.csproj", "{D2E1A0E6-6E22-4E90-8C81-716D97B356F6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Application", "Codeflix.Catalog.Application\Codeflix.Catalog.Application.csproj", "{7A876F42-CF27-4D8D-9198-BC5FF74B2812}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Application", "src\Codeflix.Catalog.Application\Codeflix.Catalog.Application.csproj", "{7A876F42-CF27-4D8D-9198-BC5FF74B2812}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Infra.Data.EF", "Codeflix.Catalog.Infra.Data.EF\Codeflix.Catalog.Infra.Data.EF.csproj", "{133560C6-2E33-4DD5-80AE-D6122F417A3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Infra.Data.EF", "src\Codeflix.Catalog.Infra.Data.EF\Codeflix.Catalog.Infra.Data.EF.csproj", "{133560C6-2E33-4DD5-80AE-D6122F417A3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeflix.Catalog.Api", "Codeflix.Catalog.Api\Codeflix.Catalog.Api.csproj", "{6AD5C522-19C4-4DCA-B6BF-2B807EE81F69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeflix.Catalog.Api", "src\Codeflix.Catalog.Api\Codeflix.Catalog.Api.csproj", "{6AD5C522-19C4-4DCA-B6BF-2B807EE81F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{993CCEAC-2A31-43F0-9452-527E9091035F}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "env", "env", "{F0A8AFC8-35DC-4900-BDB3-A83E7F8719D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
